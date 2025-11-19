@@ -1,0 +1,7 @@
+// Waybar Clock Module
+{
+  "clock": {
+    "interval": 10,
+    "format": " {:%H:%M  %d%b%Y}"
+  }
+}

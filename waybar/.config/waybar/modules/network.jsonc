@@ -1,0 +1,12 @@
+// Network Module
+{
+  "network": {
+    "interval": 2,
+    "format-disconnected": "",
+    "format-wifi": "{icon}  {essid}",
+    "format-ethernet": "󰌗 {ifname}",
+    "format-disabled": "󰤭",
+    "format-icons": [ "󰤟", "󰤢", "󰤥", "󰤨" ],
+    "on-click": "kitty -e nmtui"
+  }
+}

@@ -1,0 +1,6 @@
+// Custom Widget - Seperator
+{
+  "custom/seperator": {
+    "format": "|"
+  }
+}

@@ -1,0 +1,34 @@
+// ==========================
+// Waybar Configuration
+// Author:  RedonlineOfficial
+// Updated: 19NOV2025
+// Version: pre-0.0.1
+// ==========================
+{
+  // Global Settings
+  "layer": "bottom",
+  "position": "top",
+  "height": 10,
+  //"width":
+  "spacing": 4,
+  "exclusive": true,
+  "reload_style_on_change": true,
+
+  "modules-left": [ "cpu", "custom/seperator", "memory", "custom/seperator", "disk", "custom/seperator", "network" ],
+  "modules-center": [ "hyprland/workspaces" ],
+  "modules-right": ["bluetooth", "custom/seperator", "wireplumber", "custom/seperator", "battery", "custom/seperator", "clock" ],
+
+  // Modules
+  "include": [
+    "./modules/customSeperator.jsonc",
+    "./modules/hyprlandWorkspaces.jsonc",
+    "./modules/clock.jsonc",
+    "./modules/bluetooth.jsonc",
+    "./modules/battery.jsonc",
+    "./modules/wireplumber.jsonc",
+    "./modules/cpu.jsonc",
+    "./modules/memory.jsonc",
+    "./modules/disk.jsonc",
+    "./modules/network.jsonc"
+  ]
+}

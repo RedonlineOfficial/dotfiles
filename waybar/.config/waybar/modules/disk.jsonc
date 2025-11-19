@@ -1,0 +1,8 @@
+// Disk Module
+{
+  "disk": {
+    "interval": 10,
+    "format": "  {percentage_free}%",
+    "unit": "MiB"
+  }
+}
