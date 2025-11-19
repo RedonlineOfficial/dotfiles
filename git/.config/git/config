@@ -1,0 +1,9 @@
+[user]
+	name = RedonlineOfficial
+	email = dev@redonline.me
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim -f
+[commit]
+	template = /home/joshua/.config/git/.gitmessage
