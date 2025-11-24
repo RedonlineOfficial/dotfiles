@@ -1,0 +1,19 @@
+# ---------------------- #
+# Local Stow Ignore List #
+# ---------------------- #
+
+# Stow related files
+^/.stowrc
+^/.stow-local-ignore
+
+# Git-related files
+\.git
+\.gitignore
+\.gitmodules
+
+# Documentation files
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+
