@@ -1,0 +1,12 @@
+// Memory Module
+{
+  "memory": {
+    "interval": 2,
+    "format": "  {percentage}%",
+    "states": {
+      "high": 75,
+      "med": 45,
+      "low": 0
+    }
+  }
+}

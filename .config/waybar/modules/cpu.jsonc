@@ -1,0 +1,12 @@
+// CPU Module
+{
+  "cpu": {
+    "interval": 2,
+    "format": " {usage}%",
+    "states": {
+      "high": 65,
+      "med": 25,
+      "low": 0
+    }
+  }
+}

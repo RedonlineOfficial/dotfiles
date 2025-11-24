@@ -1,0 +1,11 @@
+// Wireplumber Module
+{
+  "wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰸈 Mute",
+    "format-icons": [ "󰕿", "󰖀", "󰕾"],
+    "on-click": "kitty -e wiremix",
+    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+  }
+}

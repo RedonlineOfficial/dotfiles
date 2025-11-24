@@ -1,0 +1,23 @@
+// Battery Module
+{
+  "battery": {
+    "interval": 2,
+    "full-at": 99,
+    "format": "{icon} {capacity}%",
+    "format-icons": ["󰂎", "󰁺", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
+    "format-plugged": " {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-full": "󰁹 {capacity}%",
+    "states": {
+      "high": 100,
+      "med": 60,
+      "low": 25,
+      "critical": 100
+    },
+    "events": {
+      "on-discharging-low": "notify-send -u normal 'Battery Low'",
+      "on-discharging-critical": "notify-send -u urgent 'Battery Critical'",
+      "on-charging-100": "notify-send -u normal 'Battery Full'"
+    }
+  }
+}

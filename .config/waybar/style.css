@@ -1,0 +1,149 @@
+/* ==============
+ * Waybar Styling
+ * ============== */
+
+/* Import colors.css */
+@import url('colors.css');
+
+/* Global Style */
+*{
+  font-family: SauceCodePro Nerd Font;
+  font-size: 15px;
+}
+
+/* Bar Style */
+window#waybar {
+  all:unset;
+}
+
+/* === Modules === */
+.modules-left {
+  padding: 5px;
+  margin: 10px 0px 5px 10px;
+  border-radius: 100px;
+  background: alpha(@background,.6);
+}
+
+.modules-center {
+  padding: 5px;
+  margin: 10px 0px 5px 0px;
+  border-radius: 100px;
+  background: alpha(@background,.6);
+}
+
+.modules-right {
+  padding: 5px;
+  margin: 10px 10px 5px 0px;
+  border-radius: 100px;
+  background: alpha(@background,.6);
+}
+
+/* --- Global Modules --- */
+#custom-seperator {
+  color: @color0;
+}
+/* --- Left Modules --- */
+#cpu, #memory, #disk, #network {
+  padding: 2px 5px 0px 5px; 
+}
+/* CPU Module */
+
+#cpu.high {
+  border-radius: 10px;
+  background: @color1;
+  color: @color7;
+}
+
+#cpu.med {
+  color: @color3;
+}
+
+#cpu.low {
+  color: @color2;
+}
+
+/* Memory Module */
+#memory.high {
+  border-radius: 10px;
+  background: @color1;
+  color: @color7;
+}
+
+#memory.med {
+  color: @color3
+}
+
+#memory.low {
+  color: @color2
+}
+
+/* Disk Module */
+
+/* Network Module */
+
+/* --- Center Modules --- */
+/* hyprland/workspaces */
+#workspaces {
+  padding: 0px 5px;
+}
+
+#workspaces button {
+  all:unset;
+  padding: 0px 11px 0px 8px;
+  color: alpha(@foreground,.4)
+}
+
+#workspaces button.active.hosting-monitor {
+  color: @color7;
+}
+
+#workspaces button.visible:not(.active),
+#workspaces button.visible:not(.hosting-monitor) {
+  color: @color3;
+}
+
+
+/* --- Right Modules --- */
+/* Clock Module */
+#clock {
+  font-size: 18px;
+  color: @foreground;
+  padding: 0px 5px 0px 0px;
+}
+
+/* Bluetooth Module */
+#bluetooth {
+  padding: 0px 0px 0px 5px;
+  font-size: 18px;
+}
+
+/* Battery Module */
+#battery {
+  font-size: 18px;
+}
+
+#battery.full, 
+#battery.plugged, 
+#battery.high.discharging,
+#battery.charging {
+  color: @color2;
+}
+
+
+#battery.med.discharging {
+  color: @color3;
+}
+
+#battery.low.discharging {
+  color: @color1;
+}
+
+#battery.critical.discharging {
+  all:unset;
+  font-size: 18px;
+  padding: 3px 10px 3px 10px;
+  border-radius: 15px;
+  background-color: @color1;
+  color: @color7;
+}
+
