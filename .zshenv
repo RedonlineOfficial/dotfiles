@@ -20,7 +20,9 @@ export DOTDIR="$HOME/dotfiles"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 # --- ssh ---
+#export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/.bitwarden-ssh-agent.sock"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/.bitwarden-ssh-agent.sock"
 
 # --- Bitwarden ---
-export BITWARDEN_SSH_AUTH_SOCK="$XDG_RUNTIME_DIR"
+#export BITWARDEN_SSH_AUTH_SOCK="$XDG_RUNTIME_DIR"
+export BITWARDEN_SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/.bitwarden-ssh-agent.sock"
