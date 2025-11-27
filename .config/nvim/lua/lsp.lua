@@ -28,5 +28,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 vim.lsp.enable({
-    "ty"
+    "ty",
+    "json-lsp"
 })

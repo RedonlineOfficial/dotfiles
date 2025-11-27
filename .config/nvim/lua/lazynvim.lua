@@ -21,7 +21,16 @@ require("lazy").setup({
     -- Colorscheme
     -- Neopywal: Integration with Wallust
     {
-        "shaunsingh/nord.nvim"
+        "RedsXDD/neopywal.nvim",
+        name = "neopywal",
+        lazy = false,
+        priority = 1000,
+        opts = {
+            use_pallet = {
+                dark = "wallust",
+                light = "wallust",
+            },
+        },
     },
 
     -- Completion
@@ -74,4 +83,11 @@ require("lazy").setup({
 
     -- LSP Manager
     { "mason-org/mason.nvim", opts = {} },
+
+    -- vim-kitty LSP
+    {
+        "fladson/vim-kitty",
+        lazy = true,
+        ft = "kitty",
+    },
 })

@@ -5,7 +5,8 @@
 -- Requires
 require('options')
 require('keymaps')
-require('plugins')
-require('colorscheme')
+require('lazynvim')
 require('lsp')
 
+-- Plugins
+require('plugins/neopywal')
