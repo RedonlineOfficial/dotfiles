@@ -12,7 +12,7 @@
       "high": 100,
       "med": 60,
       "low": 25,
-      "critical": 100
+      "critical": 15
     },
     "events": {
       "on-discharging-low": "notify-send -u normal 'Battery Low'",
