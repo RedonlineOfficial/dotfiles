@@ -6,9 +6,14 @@
 alias hg='history | grep'
 alias please='sudo $(fc -ln -1)'
 
+# - Fonts
+alias fonts='fc-list : family lang=en | sort | uniq'
+alias nerdfonts='fc-list : family lang=en | grep "Nerd Font" | sort | uniq'
+
 # --- zsh ---
 alias zrc='nvim ~/.config/zsh/.zshrc'
 alias src='source ~/.config/zsh/.zshrc'
+alias aliases='nvim "$ZDOTDIR"/configs/aliases.zsh'
 
 # --- Package Management ---
 # Pacman
