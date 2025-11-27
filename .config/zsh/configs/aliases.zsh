@@ -25,11 +25,11 @@ alias pacc='sudo pacman -Scc'	# Clean cache
 alias paclf='pacman -Ql'	# List files
 
 # Yay
-alias yay='yay -S'		# Install package
+alias yi='yay -S'		# Install package
 alias yu='yay -Syu'		# Update
 alias yr='yay -Rs'		# Remove
 alias ys='yay -Ss'		# Search
-alias yi='yay -Si'		# Info
+alias ysi='yay -Si'		# Info
 alias yq='yay -Qm'		# List locally installed packages (AUR packages count as local)
 alias ylo='yay -Qdt'		# List orphans
 alias yro='yay -Qdt && sudo yay -Rns $(yay -Qtdq)' # Remove orphans
@@ -50,15 +50,24 @@ alias 2.='cd ../..'
 alias 3.='cd ../../..'
 alias 4.='cd ../../../..'
 alias 5.='cd ../../../../..'
-
 alias back='cd -'
-alias dotfiles='cd ~/dotfiles'
+
+# - Dotfiles
+alias dots='cd ~/dotfiles/.config'
+# Stow dotfiles from anywhere using GNU Stow
+sdots() {
+    cwd=$PWD    # Remember current directory
+    cd ~/dotfiles # cd into dotfiles
+    stow . # Stow files
+    cd $cwd # Go back to current directory
+}
 
 # --- File/Folder ---
 # - LS/LSD
 if command -v lsd > /dev/null; then # Check if lsd is installed and sets aliases for it
 	# - Ls Deluxe specific commands
-	alias l='lsd -AX --group-directories-first --hyperlink auto --ignore-glob .git'
+	alias l='lsd -A --group-directories-first --hyperlink auto --ignore-glob .git'
+    alias ls='l'
 	alias lt='l --tree'
 	alias llt='ll --tree'
 	
@@ -136,3 +145,11 @@ gac() {
 	git commit
 }
 alias gaac='git add -A && git commit'
+
+# - Wallust
+alias wal='wallust'
+alias walt='wal theme'
+alias waltl='walt list'
+
+# - Hypr
+alias hyprpaperReloadWallpaper='$HOME/bin/hypr/hyprpaper_reloadWallpaper.sh'
