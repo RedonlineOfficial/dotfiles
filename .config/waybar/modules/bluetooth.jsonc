@@ -3,7 +3,7 @@
   "bluetooth": {
     "format": "󰂯",
     "format-connected": "󰂱 {num_connections}",
-    "format-connected-battery": "󰂱 {num_connections} %{device_battery_percentage}",
+    "format-connected-battery": "󰂱 {num_connections} {device_battery_percentage}%",
     "format-disabled": "󰂲",
     "on-click": "kitty -e bluetui"
   }
