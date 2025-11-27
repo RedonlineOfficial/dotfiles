@@ -1,0 +1,21 @@
+# --------------------- #
+# Wallust Configuration #
+# --------------------- #
+
+# --- Settings ---
+
+
+# --- Templates ---
+[templates]
+# Hyprland
+hyprland = { template = 'colors-hyprland.conf', target = '~/.cache/wal/colors-hyprland.conf' }
+# Waybar
+waybar = { template = 'colors-waybar.css', target = '~/.cache/wal/colors-waybar.css' }
+
+# Kitty Terminal
+kitty = { template = 'colors-kitty.conf', target = '~/.cache/wal/colors-kitty.conf' }
+
+# Neovim
+neovim = { template = 'colors-neopywal.vim', target = '~/.cache/wal/colors-wal.vim' }
+
+
