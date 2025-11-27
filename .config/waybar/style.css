@@ -3,7 +3,7 @@
  * ============== */
 
 /* Import colors.css */
-@import url('colors.css');
+@import url('../../.cache/wal/colors-waybar.css');
 
 /* Global Style */
 *{
