@@ -5,7 +5,7 @@
 # ---------------------------------------- #
 
 WALLPAPER_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/wallpapers"
-DEFAULT_WALLPAPER="archLinuxDark.jpg"
+DEFAULT_WALLPAPER="archLinuxDark_darkLogo.jpg"
 
 # Debug control:
 # - Env var: HYPRPAPER_DEBUG=1
