@@ -8,6 +8,9 @@ local opts = {
     silent = true,          -- Do not show messages
 }
 
+--- Loaderkey ---
+vim.g.mapleader = " "
+
 --- Normal Mode ---
 
 -- Window Navigation
