@@ -10,7 +10,7 @@
     "format-full": "󰁹 {capacity}%",
     "states": {
       "high": 100,
-      "med": 60,
+      "med": 65,
       "low": 25,
       "critical": 15
     },
