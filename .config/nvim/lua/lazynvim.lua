@@ -18,6 +18,23 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Plugins
 require("lazy").setup({
+    -- Oil File Explorer
+    {
+        'stevearc/oil.nvim',
+        ---@module 'oil'
+        ---@type oil.SetupOpts
+        opts = {},
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        lazy = false,
+    },
+
+    -- Oil Extensions - Git Status
+    {
+        "refractalize/oil-git-status.nvim",
+        dependencies = { "stevearc/oil.nvim", },
+        config = true,
+    },
+
     -- Colorscheme
     -- Neopywal: Integration with Wallust
     {
@@ -35,6 +52,7 @@ require("lazy").setup({
 
     -- Completion
     {
+
         "saghen/blink.cmp",
         -- optional: provides snippets for the snippet source
         dependencies = { "rafamadriz/friendly-snippets" },

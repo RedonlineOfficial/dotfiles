@@ -10,3 +10,5 @@ require('lsp')
 
 -- Plugins
 require('plugins/neopywal')
+require('plugins/oil')
+require('plugins/oil-git-status')
